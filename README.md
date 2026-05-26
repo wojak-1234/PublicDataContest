@@ -1,4 +1,7 @@
-# React + TypeScript + Vite
+# PublicDataContest
+교육데이터 분석 공모전을 위한 Repository 입니다.
+
+## Frontend (React + TypeScript + Vite)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
