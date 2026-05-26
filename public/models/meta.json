@@ -1,0 +1,24 @@
+{
+  "version": "2026.05.26",
+  "trained_at": "2026-05-26T09:10:51.499737",
+  "data_files": {
+    "v6": {
+      "path": "통합_proxy_dataset_v6.csv",
+      "md5": "fd3809c99818"
+    },
+    "v8": {
+      "path": "통합_proxy_dataset_v8_학교급.csv",
+      "md5": "b3d543bf4830"
+    }
+  },
+  "models_produced": [
+    "risk_v4.pkl",
+    "risk_school_v8.pkl",
+    "sc_weights.json",
+    "coefficients.json",
+    "precomputed_risk_sido.csv",
+    "precomputed_risk_school.csv",
+    "precomputed_cv.csv"
+  ],
+  "how_to_load_backend": "\n        import joblib, json, pandas as pd\n        m1 = joblib.load(\"models/risk_v4.pkl\")\n        m2 = joblib.load(\"models/risk_school_v8.pkl\")\n        betas = json.load(open(\"models/coefficients.json\"))\n        sc = json.load(open(\"models/sc_weights.json\"))\n        precomputed = pd.read_csv(\"models/precomputed_risk_sido.csv\")\n    "
+}
