@@ -9,8 +9,14 @@ import type {
   SchoolPredictionResult
 } from '../types';
 
-// API 서버 베이스 URL 설정 (로컬 FastAPI 서버 포트 8000 또는 Vercel 멀티 서비스 프록시 경로)
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '/_/backend';
+// API 서버 베이스 URL 설정 (로컬 환경과 배포 환경 동적 감지)
+const isLocalhost = Boolean(
+  window.location.hostname === 'localhost' ||
+  window.location.hostname === '[::1]' ||
+  window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
+);
+
+const API_BASE = import.meta.env.VITE_API_BASE_URL || (isLocalhost ? 'http://localhost:8000' : '/_/backend');
 
 
 // 1️⃣ 대시보드 데이터 로드 (FastAPI 연동)
