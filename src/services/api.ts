@@ -16,7 +16,7 @@ const isLocalhost = Boolean(
   window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
 );
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || (isLocalhost ? 'http://localhost:8000' : '/_/backend');
+const API_BASE = isLocalhost ? 'http://localhost:8000' : '/_/backend';
 
 
 // 1️⃣ 대시보드 데이터 로드 (FastAPI 연동)
