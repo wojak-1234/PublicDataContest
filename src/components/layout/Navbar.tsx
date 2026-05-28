@@ -14,7 +14,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
           <div className="navbar-brand">
             <GraduationCap className="navbar-brand-icon" />
             <div>
-              <h1 className="navbar-title">기초학력 정책 분석 시스템 MVP</h1>
+              <h1 className="navbar-title">부산 기초학력 보장 정책 시뮬레이터</h1>
               <p className="navbar-subtitle">지역별 기초학력 지원 정책 비교 및 부산 적용 효과 예측</p>
             </div>
           </div>

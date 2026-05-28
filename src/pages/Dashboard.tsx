@@ -141,7 +141,7 @@ export const Dashboard: React.FC = () => {
         <div className="card" style={{ backgroundColor: 'var(--bg-tertiary)', border: 'none' }}>
           <h3 className="text-h3" style={{ marginBottom: '1rem' }}>연구 배경</h3>
           <p className="text-body" style={{ color: 'var(--text-secondary)' }}>
-            본 시스템은 부산 지역의 기초학력 현황을 다각도로 분석하고, 타 시도의 성공적인 교육 정책을 부산에 적용했을 때의 기대 효과를 시뮬레이션하기 위해 개발된 MVP(Minimum Viable Product)입니다.
+            본 시스템은 부산 지역의 기초학력 현황을 다각도로 분석하고, 타 시도의 성공적인 교육 정책을 부산에 적용했을 때의 기대 효과를 시뮬레이션하기 위해 개발된 시뮬레이터입니다.
           </p>
         </div>
         <div className="card" style={{ backgroundColor: 'var(--bg-tertiary)', border: 'none' }}>

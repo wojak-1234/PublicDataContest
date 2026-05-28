@@ -9,8 +9,8 @@ import type {
   SchoolPredictionResult
 } from '../types';
 
-// API 서버 베이스 URL 설정 (로컬 FastAPI 서버 포트 8000)
-const API_BASE = 'http://localhost:8000';
+// API 서버 베이스 URL 설정 (로컬 FastAPI 서버 포트 8000 또는 Vercel 멀티 서비스 프록시 경로)
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/_/backend';
 
 
 // 1️⃣ 대시보드 데이터 로드 (FastAPI 연동)
