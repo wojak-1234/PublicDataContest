@@ -408,7 +408,7 @@ export const AiPrediction: React.FC = () => {
                   <h3 className="text-h3">정책 요인별 기여도 (SHAP Value 절대값)</h3>
                 </div>
                 <div className="chart-container" style={{ height: '180px' }}>
-                  <ResponsiveContainer width="100%" height="100%">
+                  <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                     <BarChart layout="vertical" data={simResult.shapData} margin={{ top: 10, right: 30, left: 20, bottom: 5 }}>
                       <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="var(--border-color)" />
                       <XAxis type="number" domain={[0, 'dataMax + 0.5']} />

@@ -106,7 +106,7 @@ export const PolicyAnalysis: React.FC = () => {
         <div className="card">
           <h3 className="text-h3" style={{ marginBottom: '1.5rem' }}>시도별 기초학력 예산 비교 (단위: 억원)</h3>
           <div className="chart-container">
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
               <BarChart layout="vertical" data={budgetData} margin={{ top: 10, right: 30, left: 20, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="var(--border-color)" />
                 <XAxis type="number" />
@@ -126,7 +126,7 @@ export const PolicyAnalysis: React.FC = () => {
         <div className="card">
           <h3 className="text-h3" style={{ marginBottom: '1.5rem' }}>시도별 기초학력 취약도 지수 (17개 시도 전체)</h3>
           <div className="chart-container" style={{ height: '500px' }}>
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
               <BarChart layout="vertical" data={proxyIndexAll} margin={{ top: 10, right: 40, left: 20, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="var(--border-color)" />
                 <XAxis type="number" domain={[0, 100]} />

@@ -93,7 +93,7 @@ export const Dashboard: React.FC = () => {
         <div className="card">
           <h3 className="text-h3" style={{ marginBottom: '1.5rem' }}>기초학력 미달률 추이 (2019-2024)</h3>
           <div className="chart-container">
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
               <AreaChart data={trends} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                 <defs>
                   <linearGradient id="colorMath" x1="0" y1="0" x2="0" y2="1">
@@ -119,7 +119,7 @@ export const Dashboard: React.FC = () => {
         <div className="card">
           <h3 className="text-h3" style={{ marginBottom: '1.5rem' }}>취약도 지수 비교 (Proxy Index - 낮을수록 양호)</h3>
           <div className="chart-container">
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
               <BarChart layout="vertical" data={proxyIndex} margin={{ top: 10, right: 30, left: 20, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="var(--border-color)" />
                 <XAxis type="number" domain={[0, 100]} />
