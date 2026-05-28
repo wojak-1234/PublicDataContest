@@ -86,8 +86,7 @@
     "backend": {
       "root": "backend",
       "routePrefix": "/_/backend",
-      "entrypoint": "app.py",
-      "runtime": "@vercel/python"
+      "entrypoint": "app.py"
     }
   }
 }
